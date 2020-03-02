@@ -1,0 +1,31 @@
+/* For RWD */
+@media screen and (max-width: 900px) {
+  ul.navBar {
+    padding: 0px;
+  }
+
+  ul.navBar li{
+    overflow: auto;
+  }
+
+  ul.navBar li label{
+    float: none;
+    display: block;
+  }
+
+  .main {
+    padding-left:0px;
+  }
+
+  .ln-selector{
+    float: none;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  ul.navBar li {
+    text-align: center;
+    float: none;
+  }
+}

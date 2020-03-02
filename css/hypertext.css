@@ -1,0 +1,15 @@
+/* This class will affect hypertext links */
+.scalable {
+  color:blue;
+  padding:0px 20px;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
+}
+
+/* To make a good animation, need to make it like a curve growth. */
+@keyframes example {
+  10%  {transform: scale(1.5);}
+  50%  {transform: scale(1);}
+}
