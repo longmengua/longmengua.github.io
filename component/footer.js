@@ -14,7 +14,5 @@ Vue.component('v-footer', {
             ],
         }
     },
-    template: '<footer style="padding:20px 0px;" class="w3-container w3-teal w3-center w3-margin-top">'
-    + '<p>{{[selected]["footer"][1]}}</p>'
-    + '</footer>'
+    template: '<p>{{[selected].footer[1]}}</p>',
 })
