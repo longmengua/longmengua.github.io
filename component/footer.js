@@ -18,7 +18,6 @@ Vue.component('v-footer', {
                 "https://www.facebook.com/longmengua",
                 "https://www.instagram.com/waltor1991/?r=nametag&fbclid=IwAR3DN39lbUdvQ5-aTia9AcAiJMHUrARZv3qewDOvNpCjiWRGRAgSOBPfo8M",
                 "https://www.linkedin.com/in/鴻文-黃-17b61b17b",
-                "https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_cv&stacked=h",
                 "https://line.me/ti/p/9UMBNQ5K5p",
             ],
         }
