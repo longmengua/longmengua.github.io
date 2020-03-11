@@ -11,7 +11,7 @@ Vue.component('v-social-media', {
         }
     },
     template: `
-    <footer style="padding:20px 0px;" class="w3-container w3-center w3-margin-top">
+    <footer style="padding: 0px;" class="w3-container w3-center w3-margin-top">
         <a v-bind:href=href[0]><i class="fab fa-facebook w3-hover-opacity social-icon"></i></a>
         <a v-bind:href=href[1]><i class="fab fa-instagram w3-hover-opacity social-icon"></i></a>
         <a v-bind:href=href[2]><i class="fab fa-linkedin w3-hover-opacity social-icon"></i></a>
