@@ -1,4 +1,4 @@
-Vue.component('v-navigation-bar', {
+Vue.component('v-navigation', {
     props: ['select'],
     data: function () {
         return {
