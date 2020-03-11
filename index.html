@@ -22,6 +22,7 @@
 
 <!-- Page Container -->
 <div id="index" class="w3-content" style="max-width:100%;">
+    <v-navigation-bar v-bind:value="selected" v-on:input="searchText = $event"></v-navigation-bar>
     <div>
         <!-- Navigation bar -->
         <ul class="navBar">
@@ -150,6 +151,7 @@
 <script>
 
 </script>
+<script type="application/javascript" src="https://longmengua.github.io/component/navigation.js"></script>
 <script type="application/javascript" src="https://longmengua.github.io/component/footer.js"></script>
 <script type="application/javascript" src="https://longmengua.github.io/main.js"></script>
 </body>

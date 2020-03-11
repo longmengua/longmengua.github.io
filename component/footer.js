@@ -22,12 +22,14 @@ Vue.component('v-footer', {
             ],
         }
     },
-    template: '<footer style="padding:20px 0px;" class="w3-container w3-teal w3-center w3-margin-top">'
-    + "<p>{{i18ns[selected]['footer'][0]}}</p>"
-    + '<a v-bind:href=href[0]><i class="fab fa-facebook w3-hover-opacity social-icon"></i></a>'
-    + '<a v-bind:href=href[1]><i class="fab fa-instagram w3-hover-opacity social-icon"></i></a>'
-    + '<a v-bind:href=href[2]><i class="fab fa-linkedin w3-hover-opacity social-icon"></i></a>'
-    + '<a v-bind:href=href[3]><i class="fab fa-line w3-hover-opacity social-icon"></i></a>'
-    + '<br/>'
-    + '</footer>'
+    template: `
+    <footer style="padding:20px 0px;" class="w3-container w3-teal w3-center w3-margin-top">
+        <p>{{i18ns[selected]['footer'][0]}}</p>
+        <a v-bind:href=href[0]><i class="fab fa-facebook w3-hover-opacity social-icon"></i></a>
+        <a v-bind:href=href[1]><i class="fab fa-instagram w3-hover-opacity social-icon"></i></a>
+        <a v-bind:href=href[2]><i class="fab fa-linkedin w3-hover-opacity social-icon"></i></a>
+        <a v-bind:href=href[3]><i class="fab fa-line w3-hover-opacity social-icon"></i></a>
+        <br/>
+    </footer>
+    `
 })
