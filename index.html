@@ -26,12 +26,12 @@
         <!-- Navigation bar -->
         <ul class="navBar">
             <li>
-                <input id="radio1" v-model="navBarSwitcher" type="radio" value="home" style="display:none;">
+                <input id="radio1" v-model="navBarSwitcher" v-change="" type="radio" value="home" style="display:none;">
                 <label for="radio1">Home</label>
                 <!--            <a href="https://longmengua.github.io/">Home</a>-->
             </li>
             <li>
-                <input id="radio2" v-model="navBarSwitcher" type="radio" value="blog" style="display:none;">
+                <input id="radio2" v-model="navBarSwitcher" v-change="" type="radio" value="blog" style="display:none;">
                 <label for="radio2">Blog</label>
                 <!--            <a href="https://longmengua.github.io/html/blog">Blog</a>-->
             </li>
@@ -158,15 +158,15 @@
             <a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_cv&stacked=h">{{i18ns[selected]['footer'][0]}}</a>
         </p>
     </footer>
-    <div w3-include-html="html/footer.html"></div>
+    <v-footer selected="{{selected}}"></v-footer>
 </div>
 <!-- End Page Container -->
 <!------------------------------------------------------------------------------------------->
 <!--using vue.js framework is for implementing i18n, the reason I have chosen it is because of the light-weight size.-->
 <script type="application/javascript">
-
 </script>
-<script type="application/javascript" src="https://longmengua.github.io/main.js"></script>
+<!--<script type="application/javascript" src="https://longmengua.github.io/main.js"></script>-->
+<script type="application/javascript" src="https://longmengua.github.io/js/footer.js"></script>
 <script type="application/javascript" src="https://longmengua.github.io/js/methods.js"></script>
 </body>
 </html>
