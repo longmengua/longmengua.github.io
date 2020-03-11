@@ -1,5 +1,5 @@
-Vue.component('v-navigation', {
-    props: ['select'],
+Vue.component('v-navigation-bar', {
+    props: ['value'],
     data: function () {
         return {
             navBarSwitcher: 'home',
@@ -35,7 +35,7 @@ Vue.component('v-navigation', {
         </li>
         <li>
             <div class="ln-selector">
-                <select v-bind:value="select" v-on:input="$emit('input', $event.target.value)" style="border: none; outline: none;">
+                <select v-bind:value="value" v-on:input="$emit('input', $event.target.value)" style="border: none; outline: none;">
                     <option v-for="option in options" v-bind:value="option.value">{{ option.text }}</option>
                 </select>
             </div>
