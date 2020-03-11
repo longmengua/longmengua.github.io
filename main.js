@@ -1,6 +1,7 @@
 var vu = new Vue({
     el: '#index',
     data: {
+        selected:'en',
       skills: [
         {text:'Java', value:'80'},
         {text:'HTML5', value:'90'},
