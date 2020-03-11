@@ -3,10 +3,6 @@ var vu = new Vue({
     data: {
       /* below is for i18n language */
       selected: 'en',
-      options: [
-        { text: 'English', value: 'en' },
-        { text: '中文(台灣)', value: 'zh_tw' },
-      ],
       skills: [
         {text:'Java', value:'80'},
         {text:'HTML5', value:'90'},
