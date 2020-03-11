@@ -14,5 +14,5 @@ Vue.component('v-footer', {
             ],
         }
     },
-    template: '<p>{{[selected].footer[1]}}</p>',
+    template: '<p>{{[selected].footer}}</p>',
 })
