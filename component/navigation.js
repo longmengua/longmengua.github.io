@@ -1,8 +1,7 @@
 Vue.component('v-navigation-bar', {
-    props: ['value'],
+    props: ['select'],
     data: function () {
         return {
-            navBarSwitcher: 'home',
             options: [
                 { text: 'English', value: 'en' },
                 { text: '中文(台灣)', value: 'zh_tw' },
@@ -35,7 +34,7 @@ Vue.component('v-navigation-bar', {
         </li>
         <li>
             <div class="ln-selector">
-                <select v-bind:value="value" v-on:input="$emit('input', $event.target.value)" style="border: none; outline: none;">
+                <select v-bind:value="select" v-on:input="$emit('input', $event.target.value)" style="border: none; outline: none;">
                     <option v-for="option in options" v-bind:value="option.value">{{ option.text }}</option>
                 </select>
             </div>

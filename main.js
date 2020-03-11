@@ -1,13 +1,6 @@
 var vu = new Vue({
     el: '#index',
     data: {
-      navBarSwitcher: 'home',
-      /* below is for i18n language */
-      selected: 'en',
-      options: [
-        { text: 'English', value: 'en' },
-        { text: '中文(台灣)', value: 'zh_tw' },
-      ],
       skills: [
         {text:'Java', value:'80'},
         {text:'HTML5', value:'90'},
@@ -44,8 +37,6 @@ var vu = new Vue({
       ],
       i18ns: {
         en: {
-          barTitle: 'Resume',
-          barLanguageTitle: 'language',
           name: 'Waltor Huang',
           title:'Programmer',
           location: 'Taipei, Taiwan',
@@ -73,8 +64,6 @@ var vu = new Vue({
           ],
         },
         zh_tw: {
-          barTitle: '履歷',
-          barLanguageTitle: '語系',
           name: '黃鴻文',
           title:'軟體工程師',
           location: '台灣台北',
