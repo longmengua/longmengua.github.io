@@ -24,28 +24,6 @@
 <div id="index" class="w3-content" style="max-width:100%;">
     <v-navigation-bar v-bind:value="selected" v-on:input="searchText = $event"></v-navigation-bar>
     <div>
-        <!-- Navigation bar -->
-        <ul class="navBar">
-            <li>
-                <input id="radio1" v-model="navBarSwitcher" v-change="" type="radio" value="home" style="display:none;">
-                <label for="radio1">Home</label>
-                <!--            <a href="https://longmengua.github.io/">Home</a>-->
-            </li>
-            <li>
-                <input id="radio2" v-model="navBarSwitcher" v-change="" type="radio" value="blog" style="display:none;">
-                <label for="radio2">Blog</label>
-                <!--            <a href="https://longmengua.github.io/html/blog">Blog</a>-->
-            </li>
-            <li>
-                <div class="ln-selector">
-                    <select v-model="selected" style="border: none; outline: none;">
-                        <option v-for="option in options" v-bind:value="option.value">
-                            {{ option.text }}
-                        </option>
-                    </select>
-                </div>
-            </li>
-        </ul>
         <!-- The Grid -->
         <div class="w3-row-padding main">
             <!-- Left Column -->
@@ -68,6 +46,7 @@
                             <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>longmengua@gmail.com
                             </p>
                             <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>0972-980-121</p>
+                            <v-social-media v-bind:selected="selected" style="background-color:white;color:#009688!important;"></v-social-media>
                             <hr>
                         </div>
                         <!--languages-->
@@ -142,8 +121,6 @@
             <!-- End Right Column -->
         </div>
     </div>
-    <!-- End Grid -->
-    <v-footer v-bind:selected="selected"></v-footer>
 </div>
 <!-- End Page Container -->
 <!------------------------------------------------------------------------------------------->
