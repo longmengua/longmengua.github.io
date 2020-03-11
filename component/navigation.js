@@ -2,6 +2,7 @@ Vue.component('v-navigation-bar', {
     props: ['select'],
     data: function () {
         return {
+            navBarSwitcher: 'home',
             options: [
                 { text: 'English', value: 'en' },
                 { text: '中文(台灣)', value: 'zh_tw' },
