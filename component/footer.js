@@ -25,10 +25,10 @@ Vue.component('v-footer', {
     },
     template: '<footer style="padding:20px 0px;" class="w3-container w3-teal w3-center w3-margin-top">'
     + "<p>{{i18ns[selected]['footer'][0]}}</p>"
-    + '<a href={{href[0]}}><i style="font-size: 40px;margin-right: 20px;" class="fa fa-facebook-official w3-hover-opacity"></i></a>'
-    + '<a href={{href[1]}}><i style="font-size: 40px;margin-right: 20px;" class="fa fa-instagram w3-hover-opacity"></i></a>'
-    + '<a href={{href[2]}}><i style="font-size: 40px;margin-right: 20px;" class="fa fa-linkedin w3-hover-opacity"></i></a>'
-    + '<a href={{href[3]}}><i style="font-size: 40px;margin-right: 20px;" class="fa fa-line w3-hover-opacity"></i></a>'
+    + '<a v-bind:href=href[0]><i style="font-size: 40px;margin-right: 20px;" class="fa fa-facebook-official w3-hover-opacity"></i></a>'
+    + '<a v-bind:href=href[1]><i style="font-size: 40px;margin-right: 20px;" class="fa fa-instagram w3-hover-opacity"></i></a>'
+    + '<a v-bind:href=href[2]><i style="font-size: 40px;margin-right: 20px;" class="fa fa-linkedin w3-hover-opacity"></i></a>'
+    + '<a v-bind:href=href[3]><i style="font-size: 40px;margin-right: 20px;" class="fa fa-line w3-hover-opacity"></i></a>'
     + '<br/>'
     + '</footer>'
 })
