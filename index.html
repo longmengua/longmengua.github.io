@@ -142,29 +142,13 @@
         </div>
     </div>
     <!-- End Grid -->
-    <footer style="padding:20px 0px;" class="w3-container w3-teal w3-center w3-margin-top">
-        <p>{{i18ns[selected]['footer'][1]}}</p>
-        <a href="https://www.facebook.com/longmengua"><i style="font-size: 30px;"
-                                                         class="fa fa-facebook-official w3-hover-opacity"></i></a>
-        &nbsp;
-        <a href="https://www.instagram.com/waltor1991/?r=nametag&fbclid=IwAR3DN39lbUdvQ5-aTia9AcAiJMHUrARZv3qewDOvNpCjiWRGRAgSOBPfo8M"><i
-                style="font-size: 30px;" class="fa fa-instagram w3-hover-opacity"></i></a>
-        &nbsp;
-        <a href="https://www.linkedin.com/in/鴻文-黃-17b61b17b"><i style="font-size: 30px;"
-                                                                class="fa fa-linkedin w3-hover-opacity"></i></a>
-        &nbsp;
-        <br>
-        <p>
-            <a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_cv&stacked=h">{{i18ns[selected]['footer'][0]}}</a>
-        </p>
-    </footer>
-    <hr/>
-    <v-footer selected="{{selected}}"></v-footer>
+    <v-footer v-bind:selected="selected"></v-footer>
 </div>
 <!-- End Page Container -->
 <!------------------------------------------------------------------------------------------->
 <!--using vue.js framework is for implementing i18n, the reason I have chosen it is because of the light-weight size.-->
-<script type="application/javascript">
+<script>
+
 </script>
 <script type="application/javascript" src="https://longmengua.github.io/component/footer.js"></script>
 <script type="application/javascript" src="https://longmengua.github.io/main.js"></script>
