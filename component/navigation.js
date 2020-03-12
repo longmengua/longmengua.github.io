@@ -1,5 +1,5 @@
 Vue.component('v-navigation', {
-    props: ['selectIn','navBarSwitcher'],
+    props: ['selectIn','navBar'],
     data: function () {
         return {
             options: [
@@ -17,11 +17,11 @@ Vue.component('v-navigation', {
     template: `
     <ul class="navBar">
         <li>
-            <input v-bind:value="navBarSwitcher" v-on:input="$emit('tapBar', $event.target.value)" id="radio1" type="radio" value="home" style="display:none;">
+            <input v-bind:value="navBar" v-on:input="$emit('tapBar', $event.target.value)" id="radio1" type="radio" value="home" style="display:none;">
             <label for="radio1">Home</label>
         </li>
         <li>
-            <input v-bind:value="navBarSwitcher" v-on:input="$emit('tapBar', $event.target.value)" id="radio2" type="radio" value="blog" style="display:none;">
+            <input v-bind:value="navBar" v-on:input="$emit('tapBar', $event.target.value)" id="radio2" type="radio" value="blog" style="display:none;">
             <label for="radio2">Blog</label>
         </li>
         <li>
