@@ -4,4 +4,4 @@ var vu = new Vue({
         navBarSwitcher: 'home',
         selected: 'en',
     }
-  });
+});
