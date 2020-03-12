@@ -4,29 +4,36 @@ Vue.component('v-language', {
         return {
             i18ns: {
                 en: {
-                    name: 'Waltor Huang',
-                    title:'Programmer',
+                    languageTitle: 'languages',
+                    languages: [
+                        { text: 'English', value: 60},
+                        { text: 'Mandarin', value: 90},
+                    ],
                 },
                 zh_tw: {
-                    name: '黃鴻文',
-                    title:'軟體工程師',
+                    languageTitle: '語言',
+                    languages: [
+                        { text: '英文', value: 60},
+                        { text: '中文（繁體）', value: 90},
+                    ],
                 }
             },
         }
     },
     template: `
-    <!--Profile information-->
-    <p>
-        <i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>{{i18ns[selected]['title']}}
-    </p>
-    <p>
-        <i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>{{i18ns[selected]['location']}}
-    </p>
-    <p>
-        <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>longmengua@gmail.com
-    </p>
-    <p>
-        <i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>0972-980-121
-    </p>
+    <!--languages-->
+    <div>
+        <p class="w3-large w3-text-theme"><b><i
+                class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>{{i18ns[selected]['languageTitle']}}</b>
+        </p>
+        <div v-for="i18n in i18ns[selected]['languages']">
+            <p>{{i18n['text']}}</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-teal"
+                     v-bind:style="{ width:i18n['value'] + '%' }">{{i18n['value']}}%
+                </div>
+            </div>
+        </div>
+    </div>
     `
 })
