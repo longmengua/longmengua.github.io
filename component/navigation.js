@@ -1,20 +1,11 @@
 Vue.component('v-navigation', {
-    props: ['select'],
+    props: ['selectIn','navBarSwitcher'],
     data: function () {
         return {
-            navBarSwitcher: 'home',
             options: [
                 { text: 'English', value: 'en' },
                 { text: '中文(台灣)', value: 'zh_tw' },
             ],
-            i18ns: {
-                en: {
-
-                },
-                zh_tw: {
-
-                }
-            },
             href: [
                 "https://www.facebook.com/longmengua",
                 "https://www.instagram.com/waltor1991/?r=nametag&fbclid=IwAR3DN39lbUdvQ5-aTia9AcAiJMHUrARZv3qewDOvNpCjiWRGRAgSOBPfo8M",
@@ -26,16 +17,16 @@ Vue.component('v-navigation', {
     template: `
     <ul class="navBar">
         <li>
-            <input id="radio1" v-model="navBarSwitcher" type="radio" value="home" style="display:none;">
+            <input v-bind:value="navBarSwitcher" v-on:input="$emit('tapBar', $event.target.value)" id="radio1" type="radio" value="home" style="display:none;">
             <label for="radio1">Home</label>
         </li>
         <li>
-            <input id="radio1" v-model="navBarSwitcher" type="radio" value="blog" style="display:none;">
-            <label for="radio1">Blog</label>
+            <input v-bind:value="navBarSwitcher" v-on:input="$emit('tapBar', $event.target.value)" id="radio2" type="radio" value="blog" style="display:none;">
+            <label for="radio2">Blog</label>
         </li>
         <li>
             <div class="ln-selector">
-                <select v-bind:value="select" v-on:input="$emit('input', $event.target.value)" style="border: none; outline: none;">
+                <select v-bind:value="selectIn" v-on:input="$emit('selectOut', $event.target.value)" style="border: none; outline: none;">
                     <option v-for="option in options" v-bind:value="option.value">{{ option.text }}</option>
                 </select>
             </div>

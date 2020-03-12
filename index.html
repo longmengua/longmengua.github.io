@@ -22,7 +22,7 @@
 
 <!-- Page Container -->
 <div id="index" class="w3-content" style="max-width:100%;">
-    <v-navigation v-bind:select="selected" v-on:input="selected = $event"></v-navigation>
+    <v-navigation v-bind:selectIn="[selected, navBarSwitcher]" v-on:selectOut="selected = $event" v-on:tapBar="selected = $event"></v-navigation>
     <div>
         <!-- The Grid -->
         <div class="w3-row-padding main">
