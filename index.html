@@ -84,34 +84,13 @@
 <!------------------------------------------------------------------------------------------->
 <!--using vue.js framework is for implementing i18n, the reason I have chosen it is because of the light-weight size.-->
 <script>
-Vue.component('v-avatar', {
-    props: ['selected'],
-    data: function () {
-        return {
-            i18ns: {
-                en: {
-                    name: 'Waltor Huang',
-                },
-                zh_tw: {
-                    name: '黃鴻文',
-                }
-            },
-        }
-    },
-    template: `
-    <!--Profile image-->
-    <img style="width: 100%;border-radius: 50%;" alt="Avatar" src="https://longmengua.github.io/assets/Profile.jpg">
-    <div style="text-align: center;">
-        <h2>{{i18ns[selected]['name']}}</h2>
-    </div>
-    `
-})
+
 </script>
-<!--<script type="application/javascript" src="https://longmengua.github.io/component/avatar.js"></script>-->
+<script type="application/javascript" src="https://longmengua.github.io/component/avatar.js"></script>
 <script type="application/javascript" src="https://longmengua.github.io/component/education.js"></script>
 <script type="application/javascript" src="https://longmengua.github.io/component/language.js"></script>
 <script type="application/javascript" src="https://longmengua.github.io/component/navigation.js"></script>
-<!--<script type="application/javascript" src="https://longmengua.github.io/component/prpfile.js"></script>-->
+<script type="application/javascript" src="https://longmengua.github.io/component/prpfile.js"></script>
 <script type="application/javascript" src="https://longmengua.github.io/component/skill.js"></script>
 <script type="application/javascript" src="https://longmengua.github.io/component/social-media.js"></script>
 <script type="application/javascript" src="https://longmengua.github.io/component/work-experience.js"></script>
