@@ -19,6 +19,9 @@ Vue.component('v-profile', {
     template: `
     <!--Profile information-->
     <div style="margin: 0px 20px;">
+        <div style="text-align: center;">
+            <h2>{{i18ns[selected]['name']}}</h2>
+        </div>
         <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>{{i18ns[selected]['title']}}
         </p>
         <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>{{i18ns[selected]['location']}}
