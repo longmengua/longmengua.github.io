@@ -36,10 +36,14 @@ Vue.component('v-experience', {
                 class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>{{i18ns[selected]['workExperienceTitle']}}
         </h2>
         <div class="w3-container" v-for="(workExperience, index) in i18ns[selected]['workExperience']">
-            <h5 class="w3-opacity"><b>{{workExperience['title']}}</b>&nbsp;<a
-                    v-bind:href="index > workExperienceLinks.length ? null : workExperienceLinks[index]"><i
-                    class="scalable fa fa-external-link fa-fw w3-margin-right"></i></a></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{workExperience['date']}}
+            <h5 class="w3-opacity">
+                <a v-bind:href="index > workExperienceLinks.length ? null : workExperienceLinks[index]">
+                    <b>{{workExperience['title']}}</b>
+                </a>
+            </h5>
+            <h6 class="w3-text-teal">
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                <span>{{workExperience['date']}}</span>
             </h6>
             <p>{{workExperience['content']}}</p>
             <br/>
