@@ -14,6 +14,7 @@ Vue.component('v-blog', {
     },
     template: `
     <div id="blog">
+        <h1>Under construction...</h1>
     </div>
     `
 })
