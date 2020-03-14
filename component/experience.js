@@ -38,7 +38,7 @@ Vue.component('v-experience', {
         <div class="w3-container" v-for="(workExperience, index) in i18ns[selected]['workExperience']">
             <h5 class="w3-opacity">
                 <a v-bind:href="index > workExperienceLinks.length ? null : workExperienceLinks[index]">
-                    <b>{{workExperience['title']}}</b>
+                    <b style="color: blue;">{{workExperience['title']}}</b>
                 </a>
             </h5>
             <h6 class="w3-text-teal">
