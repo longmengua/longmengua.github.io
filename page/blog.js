@@ -1,4 +1,4 @@
-Vue.component('v-avatar', {
+Vue.component('v-blog', {
     props: ['selected'],
     data: function () {
         return {
@@ -13,8 +13,7 @@ Vue.component('v-avatar', {
         }
     },
     template: `
-    <div id="avatar">
-        <img style="width: 100%;border-radius: 50%;" alt="Avatar" src="https://longmengua.github.io/assets/Profile.jpg"/>
+    <div id="blog">
     </div>
     `
 })

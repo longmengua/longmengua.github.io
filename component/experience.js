@@ -1,4 +1,4 @@
-Vue.component('v-work-experience', {
+Vue.component('v-experience', {
     props: ['selected'],
     data: function () {
         return {
@@ -31,8 +31,7 @@ Vue.component('v-work-experience', {
         }
     },
     template: `
-    <!--Work Experience-->
-    <div class="w3-container w3-card w3-white w3-margin-bottom">
+    <div id="experience" class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i
                 class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>{{i18ns[selected]['workExperienceTitle']}}
         </h2>

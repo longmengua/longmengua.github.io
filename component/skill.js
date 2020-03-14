@@ -37,8 +37,7 @@ Vue.component('v-skill', {
         }
     },
     template: `
-    <!--Skills-->
-    <div>
+    <div id="skill">
         <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>{{i18ns[selected]['skillTitle']}}</b>
         </p>
         <div style="height: 300px;overflow: scroll;">

@@ -17,8 +17,7 @@ Vue.component('v-profile', {
         }
     },
     template: `
-    <!--Profile information-->
-    <div style="margin: 0px 20px;">
+    <div id="profile" style="margin: 0px 20px;">
         <div style="text-align: center;">
             <h2>{{i18ns[selected]['name']}}</h2>
         </div>
@@ -29,8 +28,6 @@ Vue.component('v-profile', {
         <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>longmengua@gmail.com
         </p>
         <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>0972-980-121</p>
-        <v-social-media v-bind:selected="selected" style="background-color:white;color:#009688!important;"></v-social-media>
-        <hr>
     </div>
     `
 })

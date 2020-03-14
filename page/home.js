@@ -6,9 +6,7 @@ Vue.component('v-home', {
         }
     },
     template: `
-    <!-- The Grid -->
-    <div class="w3-row-padding main">
-        <!-- Left Column -->
+    <div id="home" class="w3-row-padding main">
         <div class="w3-third">
             <div class="w3-white w3-text-grey w3-card-4">
                 <div class="w3-display-container">
@@ -16,6 +14,7 @@ Vue.component('v-home', {
                 </div>
                 <div class="w3-display-container">
                     <v-profile v-bind:selected="selected"></v-profile>
+                    <v-social v-bind:selected="selected" style="background-color:white;color:#009688!important;"></v-social>
                 </div>
                 <div class="w3-container">
                     <v-language v-bind:selected="selected"></v-language>
@@ -24,13 +23,10 @@ Vue.component('v-home', {
                 </div>
             </div>
         </div>
-        <!-- End Left Column -->
-        <!-- Right Column -->
         <div class="w3-twothird">
-            <v-work-experience v-bind:selected="selected"></v-work-experience>
+            <v-experience v-bind:selected="selected"></v-experience>
             <v-education v-bind:selected="selected"></v-education>
         </div>
-        <!-- End Right Column -->
     </div>
     `
 })
