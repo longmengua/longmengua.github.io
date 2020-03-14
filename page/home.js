@@ -1,5 +1,5 @@
 Vue.component('v-home', {
-    props: ['select'],
+    props: ['selected'],
     data: function () {
         return {
 
