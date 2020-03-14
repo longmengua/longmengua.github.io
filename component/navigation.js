@@ -26,16 +26,16 @@ Vue.component('v-navigation', {
     template: `
     <ul class="navBar">
         <li>
-            <input id="radio1" v-model="navBarSwitcher" type="radio" value="home" style="display:none;">
+            <input id="radio1" v-model="navBarSwitcher" v-on:input="$emit('page', $event.target.value)" type="radio" value="home" style="display:none;">
             <label for="radio1">Home</label>
         </li>
         <li>
-            <input id="radio2" v-model="navBarSwitcher" type="radio" value="blog" style="display:none;">
+            <input id="radio2" v-model="navBarSwitcher" v-on:input="$emit('page', $event.target.value)" type="radio" value="blog" style="display:none;">
             <label for="radio2">Blog</label>
         </li>
         <li>
             <div class="ln-selector">
-                <select v-bind:value="select" v-on:input="$emit('input', $event.target.value)" style="border: none; outline: none;">
+                <select v-bind:value="select" v-on:input="$emit('out', $event.target.value)" style="border: none; outline: none;">
                     <option v-for="option in options" v-bind:value="option.value">{{ option.text }}</option>
                 </select>
             </div>
