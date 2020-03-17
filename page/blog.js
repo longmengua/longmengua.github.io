@@ -13,7 +13,7 @@ Vue.component('v-blog', {
         }
     },
     template: `
-    <div id="blog">
+    <div id="blog" class="w3-row-padding main">
         <h1>Under construction...</h1>
     </div>
     `
