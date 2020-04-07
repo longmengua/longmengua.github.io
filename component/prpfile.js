@@ -5,7 +5,7 @@ Vue.component('v-profile', {
             i18ns: {
                 en: {
                     name: 'Waltor Huang',
-                    birthday: 'birthday: 12.03.1991',
+                    birthday: '12.03.1991',
                     title:'Programmer',
                     location: 'Taipei, Taiwan',
                 },
@@ -23,7 +23,10 @@ Vue.component('v-profile', {
         <div style="text-align: center;">
             <h2>{{i18ns[selected]['name']}}</h2>
         </div>
-        <p>{{i18ns[selected]['birthday']}}</p>
+        <p>
+            <i class="fa fa-birthday-cake fa-fw w3-margin-right w3-large w3-text-teal"></i>
+            {{i18ns[selected]['birthday']}}
+        </p>
         <p>
             <i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>
             {{i18ns[selected]['title']}}
