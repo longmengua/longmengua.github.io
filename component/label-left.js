@@ -17,10 +17,17 @@ Vue.component('v-label-left', {
         }
     },
     template: `
-    <div id="label-left">
-        <div class="label">1</div>
-        <div class="label">2</div>
-        <div class="label">3</div>
+    <div>
+        <div id="label-left">
+            <div class="label">1</div>
+            <div class="label">2</div>
+            <div class="label">3</div>
+        </div>
+        <div id="label-left">
+            <div class="label">1</div>
+            <div class="label">2</div>
+            <div class="label">3</div>
+        </div>
     </div>
     `
 })
