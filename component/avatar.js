@@ -15,9 +15,9 @@ Vue.component('v-avatar', {
     template: `
     <div id="avatar" style="max-width: 300px;margin:0 auto;">
         <img style="width: 100%;border-radius: 50%;" alt="Avatar" src="https://longmengua.github.io/assets/Profile.jpg"/>
-    </div>
-    <div style="text-align: center;">
-        <h2>{{i18ns[selected]['name']}}</h2>
+        <div style="text-align: center;">
+            <h2>{{i18ns[selected]['name']}}</h2>
+        </div>
     </div>
     `
 })
