@@ -7,7 +7,6 @@ Vue.component('v-home', {
     },
     template: `
     <div id="home" class="w3-row-padding main">
-//        left side
         <div class="w3-third">
             <div class="w3-white w3-text-grey w3-card-4">
                 <div class="w3-display-container">
@@ -25,7 +24,6 @@ Vue.component('v-home', {
                 </div>
             </div>
         </div>
-//        right side
         <div class="w3-twothird">
             <v-experience v-bind:selected="selected"></v-experience>
             <v-education v-bind:selected="selected"></v-education>
