@@ -17,7 +17,7 @@ Vue.component('v-profile', {
         }
     },
     template: `
-    <div id="profile" style="margin: 0px 20px;">
+    <div id="profile" style="margin: 0px 20px;word-break: break-word;">
         <p>
             <i class="fa fa-birthday-cake fa-fw w3-margin-right w3-large w3-text-teal"></i>
             {{i18ns[selected]['birthday']}}
