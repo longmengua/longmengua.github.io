@@ -20,9 +20,9 @@ a {
 #label-left .label{
     width: 30%;
 }
-.hover {
+#label-left .hover {
     cursor: pointer;
 }
-.hover:hover {
+#label-left .hover:hover {
     background-color: deepSkyBlue;
 }
