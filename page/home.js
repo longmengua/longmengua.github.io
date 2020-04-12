@@ -8,6 +8,9 @@ Vue.component('v-home', {
     template: `
     <div id="home" class="w3-row-padding main">
         <div class="w3-third left-side">
+            <div>
+                <v-label-left v-bind:selected="selected"></v-label-left>
+            </div>
             <div class="w3-white w3-text-grey w3-card-4">
                 <div class="w3-display-container">
                     <v-avatar v-bind:selected="selected"></v-avatar>

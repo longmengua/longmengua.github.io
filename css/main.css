@@ -11,3 +11,12 @@ a {
     margin: 0px 10px;
     color: #ff9800 !important;
 }
+.label {
+    background-color: moccasin;
+    border-radius: 10px 10px 0px 0px;
+    display: inline-block;
+    text-align: center;
+}
+#label-left .label{
+    width: 33%;
+}
