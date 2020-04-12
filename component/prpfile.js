@@ -40,7 +40,8 @@ Vue.component('v-profile', {
             <a href="mailto:longmengua@gmail.com">longmengua@gmail.com</a>
         </p>
         <p>
-            <i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>0972-980-121
+            <i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>
+            0972-980-121
         </p>
     </div>
     `

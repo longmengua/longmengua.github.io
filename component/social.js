@@ -16,7 +16,6 @@ Vue.component('v-social', {
         <a v-bind:href=href[1]><i class="fab fa-instagram w3-hover-opacity social-icon"></i></a>
         <a v-bind:href=href[2]><i class="fab fa-linkedin w3-hover-opacity social-icon"></i></a>
         <a v-bind:href=href[3]><i class="fab fa-line w3-hover-opacity social-icon"></i></a>
-        <hr/>
     </div>
     `
 })
