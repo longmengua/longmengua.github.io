@@ -15,13 +15,9 @@ Vue.component('v-home', {
             <div class="w3-white w3-text-grey w3-card-4">
                 <div v-show="labelOption1 == 0" class="w3-display-container">
                     <v-avatar v-bind:selected="selected"></v-avatar>
-                </div>
-                <div v-show="labelOption1 == 0" class="w3-display-container">
                     <v-social v-bind:selected="selected" style="background-color:white;color:#009688!important;"></v-social>
                     <v-profile v-bind:selected="selected"></v-profile>
-                </div>
-                <hr/>
-                <div v-show="labelOption1 == 0" class="w3-container">
+                    <hr/>
                     <v-language v-bind:selected="selected"></v-language>
                 </div>
                 <div v-show="labelOption1 == 1" class="w3-container">
