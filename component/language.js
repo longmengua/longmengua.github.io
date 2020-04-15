@@ -33,6 +33,7 @@ Vue.component('v-language', {
                 </div>
             </div>
         </div>
+        <br/>
     </div>
     `
 })
