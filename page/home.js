@@ -12,15 +12,15 @@ Vue.component('v-home', {
                 <v-label-left v-bind:selected="selected" v-on:out="labelOption = $event"></v-label-left>
             </div>
             <div class="w3-white w3-text-grey w3-card-4">
-                <div v-show="labelOption == 0" class="w3-display-container">
+                <div class="w3-display-container">
                     <v-avatar v-bind:selected="selected"></v-avatar>
                 </div>
-                <div v-show="labelOption == 0" class="w3-display-container">
+                <div class="w3-display-container">
                     <v-social v-bind:selected="selected" style="background-color:white;color:#009688!important;"></v-social>
                     <v-profile v-bind:selected="selected"></v-profile>
                 </div>
                 <hr/>
-                <div v-show="labelOption == 0" class="w3-container">
+                <div class="w3-container">
                     <v-language v-bind:selected="selected"></v-language>
                 </div>
                 <br/>
