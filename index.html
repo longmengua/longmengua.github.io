@@ -19,7 +19,7 @@
 </style>
 <body>
 <div id="index" class="w3-content" style="max-width:100%;">
-    <v-navigation v-bind:select="selected" v-on:out="selected = $event" v-on:page="navBarSwitcher = $event"></v-navigation>
+    <v-navigation v-bind:selected="selected" v-on:out="selected = $event" v-on:page="navBarSwitcher = $event"></v-navigation>
     <v-home v-bind:selected="selected" v-show="navBarSwitcher == 'home'"></v-home>
     <v-blog v-bind:selected="selected" v-show="navBarSwitcher == 'blog'"></v-blog>
     <div></div>
