@@ -40,7 +40,7 @@ Vue.component('v-skill', {
     <div id="skill">
         <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>{{i18ns[selected]['skillTitle']}}</b>
         </p>
-        <div style="height: 300px;overflow: scroll;">
+        <div style="">
             <div v-for="skill in skills">
                 <p>{{skill['text']}}</p>
                 <div class="w3-light-grey w3-round-xlarge w3-small">

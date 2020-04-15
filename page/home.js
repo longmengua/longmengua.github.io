@@ -24,11 +24,9 @@ Vue.component('v-home', {
                 <div v-show="labelOption1 == 0" class="w3-container">
                     <v-language v-bind:selected="selected"></v-language>
                 </div>
-                <br/>
                 <div v-show="labelOption1 == 1" class="w3-container">
                     <v-skill v-bind:selected="selected"></v-skill>
                 </div>
-                <br/>
             </div>
         </div>
         <div class="w3-twothird right-side">
