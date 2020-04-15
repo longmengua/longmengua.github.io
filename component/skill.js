@@ -38,6 +38,7 @@ Vue.component('v-skill', {
     },
     template: `
     <div id="skill">
+        <br/>
         <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>{{i18ns[selected]['skillTitle']}}</b>
         </p>
         <div style="">
@@ -50,7 +51,7 @@ Vue.component('v-skill', {
                 </div>
             </div>
         </div>
-        <br>
+        <br/>
     </div>
     `
 })
