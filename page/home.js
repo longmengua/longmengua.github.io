@@ -14,6 +14,7 @@ Vue.component('v-home', {
             </div>
             <div class="w3-white w3-text-grey w3-card-4">
                 <div v-show="labelOption1 == 0" class="w3-container">
+                    <br/>
                     <v-avatar v-bind:selected="selected"></v-avatar>
                     <v-social v-bind:selected="selected" style="background-color:white;color:#009688!important;"></v-social>
                     <v-profile v-bind:selected="selected"></v-profile>
@@ -24,6 +25,7 @@ Vue.component('v-home', {
                     <v-skill v-bind:selected="selected"></v-skill>
                 </div>
             </div>
+            <br/>
         </div>
         <div class="w3-twothird right-side">
             <div style="text-align:center;">

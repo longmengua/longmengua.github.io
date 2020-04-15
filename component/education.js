@@ -15,7 +15,7 @@ Vue.component('v-education', {
                     ],
                 },
                 zh_tw: {
-                    educationTitle : '學/經歷',
+                    educationTitle : '學歷',
                     education: [
                         {title:'財團法人資訊工業策進會(資策會)', date:'2017.08 - 2018.01',content:'Java 網頁開發養成班。'},
                         {title:'國立澎湖科技大學', date:'2011.09 - 2014.06',content:'電信工程學系。'},

@@ -8,8 +8,8 @@ Vue.component('v-label-right', {
                     label2: 'Education',
                 },
                 zh_tw: {
-                    label1: '經驗',
-                    label2: '教育',
+                    label1: '經歷',
+                    label2: '學歷',
                 }
             },
         }
