@@ -1,4 +1,4 @@
-# This GitHub is established for more convenient interviewing.
+# This GitHub is established for interview.
 
 [Link][eng-doc].
 
