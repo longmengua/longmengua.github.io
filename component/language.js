@@ -28,7 +28,7 @@ Vue.component('v-language', {
         <div v-for="i18n in i18ns[selected]['languages']">
             <p>{{i18n['text']}}</p>
             <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-teal"
+                <div class=" w3-center w3-round-xlarge w3-teal"
                      v-bind:style="{ width:i18n['value'] + '%' }">{{i18n['value']}}%
                 </div>
             </div>
