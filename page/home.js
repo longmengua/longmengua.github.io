@@ -2,7 +2,7 @@ Vue.component('v-home', {
     props: ['selected'],
     data: function () {
         return {
-            label-option:0//0: basic info, 1: tech skills info.
+            labelOption:0 //0: basic info, 1: tech skills info.
         }
     },
     template: `
