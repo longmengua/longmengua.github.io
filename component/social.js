@@ -11,7 +11,7 @@ Vue.component('v-social', {
         }
     },
     template: `
-    <div id="social" style="padding: 0px;" class=" w3-center w3-margin-top w3-margin-bottom">
+    <div id="social" style="padding: 0px;" class="w3-container w3-center w3-margin-top w3-margin-bottom">
         <a v-bind:href=href[0]><i class="fab fa-facebook w3-hover-opacity social-icon"></i></a>
         <a v-bind:href=href[1]><i class="fab fa-instagram w3-hover-opacity social-icon"></i></a>
         <a v-bind:href=href[2]><i class="fab fa-linkedin w3-hover-opacity social-icon"></i></a>

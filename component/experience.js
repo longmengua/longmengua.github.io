@@ -31,11 +31,11 @@ Vue.component('v-experience', {
         }
     },
     template: `
-    <div id="experience" class=" w3-card w3-white w3-margin-bottom">
+    <div id="experience" class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i
                 class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>{{i18ns[selected]['workExperienceTitle']}}
         </h2>
-        <div class="" v-for="(workExperience, index) in i18ns[selected]['workExperience']">
+        <div class="w3-container" v-for="(workExperience, index) in i18ns[selected]['workExperience']">
             <h5 class="w3-opacity">
                 <a v-bind:href="index > workExperienceLinks.length ? null : workExperienceLinks[index]">
                     <b style="color: blue;">{{workExperience['title']}}</b>
