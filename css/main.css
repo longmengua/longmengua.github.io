@@ -25,10 +25,10 @@ a {
 #label-right .label{
     width: 48%;
 }
-#label-left .hover {
+.hover {
     cursor: pointer;
 }
-#label-left .hover:hover {
+.hover:hover {
     background-color: deepSkyBlue;
     color: white;
 }

@@ -23,7 +23,7 @@ Vue.component('v-skill', {
                 {text:'Spring boot', value:'60'},
                 {text:'Spring Security', value:'60'},
                 {text:'Oauth 2', value:'60'},
-                {text:'AES Encryption', value:'60'},
+                {text:'AES/CBC Encryption', value:'60'},
                 {text:'Jhipster', value:'60'},
             ],
             i18ns: {
