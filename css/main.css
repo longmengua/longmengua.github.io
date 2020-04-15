@@ -20,6 +20,9 @@ a {
 #label-left .label{
     width: 48%;
 }
+#label-right .label{
+    width: 48%;
+}
 #label-left .hover {
     cursor: pointer;
 }
