@@ -18,11 +18,12 @@ a {
     text-align: center;
 }
 #label-left .label{
-    width: 30%;
+    width: 48%;
 }
 #label-left .hover {
     cursor: pointer;
 }
 #label-left .hover:hover {
     background-color: deepSkyBlue;
+    color: white;
 }
