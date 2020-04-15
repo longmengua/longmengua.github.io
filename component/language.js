@@ -21,7 +21,7 @@ Vue.component('v-language', {
         }
     },
     template: `
-    <div  id="language">
+    <div id="language">
         <p class="w3-large w3-text-theme"><b><i
                 class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>{{i18ns[selected]['languageTitle']}}</b>
         </p>
